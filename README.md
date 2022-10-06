@@ -92,14 +92,12 @@
 ### Самостоятельно разработать сценарий воспроизведения звукового сопровождения в Unity в зависимости от изменения считанных данных в задании 2
 
 В качестве входных данных я взял переменную loss(столбец 4). И сделал свой сценарий воспроизведения звукового сопровождения в Unity.
-Если loss
+Если loss <= 1025,37, то будет восроизводиться аудиофайл "Хорошо"; 1025.37 < loss < 1150.034 "Средне"; loss >= 1150.034 "Плохо":
 
 ![Script(1)](https://user-images.githubusercontent.com/102538132/194337565-241fd797-6417-410a-b159-791f57c452bc.png)
 ![Script(2)](https://user-images.githubusercontent.com/102538132/194337581-d4518658-80d2-4e21-b27e-652d0d03e4aa.png)
+![Script(4)](https://user-images.githubusercontent.com/102538132/194340662-a12a1e78-2ed3-4056-a152-a60c93c39dfd.png)
 ![Script(3)](https://user-images.githubusercontent.com/102538132/194337589-869b5ae6-7788-45a7-b8ec-642d0f0a2f86.png)
-
-
-
 ![Unity_answer](https://user-images.githubusercontent.com/102538132/194337608-ae151fb8-e038-448a-aab1-ee9bebdfaa4d.png)
 
 
