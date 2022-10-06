@@ -44,16 +44,27 @@
 - В облачном сервисе google console подключить API для работы с google sheets и google drive.
 
 ![GoogleColab](https://user-images.githubusercontent.com/102538132/194267037-72fec0de-66c0-4c56-b2db-23a0e96bd80e.png)
+![Доступ](https://user-images.githubusercontent.com/102538132/194271960-0817146b-68cb-42da-a807-f069a2bd8184.png)
 
 
 - Реализовать запись данных из скрипта на python в google-таблицу. Данные описывают изменение темпа инфляции на протяжении 11 отсчётных периодов, с учётом стоимости игрового объекта в каждый период.
 
+![Python(1)](https://user-images.githubusercontent.com/102538132/194272038-761f1e51-34c2-4e52-a2c6-f697523e9c02.png)
+![Python(2)](https://user-images.githubusercontent.com/102538132/194272068-55e72924-ea31-4f58-bb99-96d4ef8f0739.png)
+![GoogleSheets](https://user-images.githubusercontent.com/102538132/194272101-2836a799-6456-4d4d-9f18-e285592c6f07.png)
 
 
-- Создать новый проект на Unity, который будет получать данные из google-
-таблицы, в которую были записаны данные в предыдущем пункте.
-- Написать функционал на Unity, в котором будет воспризводиться аудио-
-файл в зависимости от значения данных из таблицы.
+- Создать новый проект на Unity, который будет получать данные из google-таблицы, в которую были записаны данные в предыдущем пункте.
+
+![Unity](https://user-images.githubusercontent.com/102538132/194272366-4a4583b1-97d4-4254-b3b5-1db0804e9708.png)
+
+
+- Написать функционал на Unity, в котором будет воспризводиться аудио-файл в зависимости от значения данных из таблицы.
+
+![script(1)](https://user-images.githubusercontent.com/102538132/194272482-9214ef36-7d42-446b-b8c5-ff6674ddbae5.png)
+![script(2)](https://user-images.githubusercontent.com/102538132/194272500-1de1643c-f1f8-4f49-8a18-f574892703b7.png)
+![script(3)](https://user-images.githubusercontent.com/102538132/194272525-5c3cd39c-ec47-413b-8e68-d878bb657fd9.png)
+
 
 ## Задание 2
 ### В разделе "ход работы" пошагово выполнить каждый пункт с описанием и примером реализации задачи по теме лабораторной работы
