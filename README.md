@@ -103,7 +103,7 @@
 
 
 ## Выводы
-Выполняя эту лабораторную работу, я впервые поработал с аудифайлами, научился работать с аудиофайлом в Unity, связывать PyCharm с Google Sheets через Google Console и связывать Google Sheets с Unity: передавать набор данных из PyCharm в Google Sheets и брать набор данных из Google Sheets и использовать их в Unity .
+Выполняя эту лабораторную работу, я впервые поработал с аудифайлами, научился работать с аудиоресурсом в Unity, связывать PyCharm с Google Sheets через Google Console и связывать Google Sheets с Unity: передавать набор данных из PyCharm в Google Sheets и брать набор данных из Google Sheets и использовать их в Unity .
 
 
 | Plugin | README |
