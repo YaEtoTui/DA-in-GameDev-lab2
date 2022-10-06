@@ -69,62 +69,27 @@
 ## Задание 2
 ### Реализовать запись в Google-таблицу набора данных, полученных с помощью линейной регрессии из лабораторной работы № 1
 
+На следующих скриншотах представлен код линейной регрессии. Изменим так, чтобы мы могли увидеть набор данных на консоли и могли передать их в Google Sheets: 
+
+
+![Python(1)](https://user-images.githubusercontent.com/102538132/194334176-5d5a3eeb-9981-4f53-97ae-4fb4a55c1e26.png)
+![Python(2)](https://user-images.githubusercontent.com/102538132/194334187-7bf06994-ae0e-40ad-84f2-48865a699d56.png)
+![Python(3)](https://user-images.githubusercontent.com/102538132/194334201-897ab3be-b7ae-410e-9244-c531d680a0d6.png)
+![Python(4)](https://user-images.githubusercontent.com/102538132/194334212-e56d0e62-e552-49fa-9d52-8716d585615b.png)
+
+Давайте проверим работоспособность кода. Заметим, что первое значение - a, второе - b, третье - loss:
+
+
+![Python_Run](https://user-images.githubusercontent.com/102538132/194334229-ce23c867-3adc-4cd3-96f4-c7c76469ba9e.png)
+
+Можем увидеть значения, которые мы нашли с помощью линейной регрессии в GoogleSheets на следующем скриншоте. Первый столбец - количество итераций, второй - переменная a, третий - переменная b, четвертый - переменная loss:
+
+
+![GoogleSheets](https://user-images.githubusercontent.com/102538132/194334244-c1aabe5e-4544-4195-b11c-4d9b552725a1.png)
 
 
 ## Задание 3
 ### Самостоятельно разработать сценарий воспроизведения звукового сопровождения в Unity в зависимости от изменения считанных данных в задании 2
-
-1) Производя итерации во 2 задании, мы каждый раз мы изменяем параметр times функции iterate. При этом loss не претерпевает особых изменений, из этого следует, что изменение исходных данных не влечёт за собой изменений loss, то есть loss стремится к нулю. Пример:
-```py
-
-#iterated function, return a and b
-
-def iterate(a,b,x,y,times):
-  for i in range(times):
-    a,b = optimize(a,b,x,y)
-  return a,b
-
-```
-Можно увидеть, что количество итераций функции iterate(times) влияет на переменные a и b, а те определяют результат переменной loss. Доказательства что от изменения количества итераций графики не изменялись можно посмотреть на скринах 2 задания:
-
-```py
-
-#For the first iteration, the parameter values, losses, and visualization after the iteration are displayed
-
-a,b = iterate(a,b,x,y,2)
-prediction=model(a,b,x)
-loss = loss_function(a, b, x, y) 
-print(a,b,loss)
-plt.scatter(x,y)
-plt.plot(x,prediction)
-
-a,b = iterate(a,b,x,y,10000)
-prediction=model(a,b,x)
-loss = loss_function(a, b, x, y) 
-print(a,b,loss)
-plt.scatter(x,y)
-plt.plot(x,prediction)
-
-```
-
-2) Следуя из кода ниже и двух следующих скринов, можно сказать, что Lr отвечает за линейную регрессию, её направление. При увеличении Lr угол увеличивается.
-
-```py
-
-def optimize(a,b,x,y):
-  num = len(x)
-  prediction = model(a,b,x)
-  #Update the values of A and B by finding the partical derivatives of the loss function on a and b
-  da = (1.0/num) * ((prediction - y)*x).sum()
-  db = (1.0/num) * ((prediction - y).sum())
-  a = a - Lr*da
-  b = b - Lr*db
-  return a, b
-
-```
-
-![2 2](https://user-images.githubusercontent.com/102538132/191975741-53e6a025-b59f-49ae-9b53-2ce0e9486680.png)
-![2 1](https://user-images.githubusercontent.com/102538132/191975749-7d460d69-8fb1-417e-ab88-efe7b22b4648.png)
 
 
 
