@@ -77,7 +77,7 @@
 ![Python(3)](https://user-images.githubusercontent.com/102538132/194334201-897ab3be-b7ae-410e-9244-c531d680a0d6.png)
 ![Python(4)](https://user-images.githubusercontent.com/102538132/194334212-e56d0e62-e552-49fa-9d52-8716d585615b.png)
 
-Давайте проверим работоспособность кода. Заметим, что первое значение - a, второе - b, третье - loss:
+Проверим работоспособность кода. Заметим, что первое значение - a, второе - b, третье - loss:
 
 
 ![Python_Run](https://user-images.githubusercontent.com/102538132/194334229-ce23c867-3adc-4cd3-96f4-c7c76469ba9e.png)
